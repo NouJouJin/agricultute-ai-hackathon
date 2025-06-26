@@ -2,6 +2,47 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ★★★【ギミック2】パーソナライズヒーローセクション ★★★
+    const personalizeHeroSection = async () => {
+        const heroTitle = document.getElementById('personalized-hero-title');
+        if (!heroTitle) return;
+
+        // 1. 再訪問かどうかをチェック
+        if (localStorage.getItem('visitedAgriHackathonLP')) {
+            // 再訪問の場合のメッセージ
+            heroTitle.textContent = 'おかえりなさい。未来を変える準備は、もうすぐ整います。';
+        } else {
+            // 初回訪問の場合
+            try {
+                // 2. IPアドレスから地域情報を取得
+                const response = await fetch('https://ip-api.com/json/?fields=status,message,regionName,query');
+                if (!response.ok) {
+                    throw new Error('API request failed');
+                }
+                const data = await response.json();
+
+                if (data.status === 'success' && data.regionName) {
+                    // 3. 地域情報に基づいたメッセージに書き換え
+                    heroTitle.textContent = `${data.regionName}の挑戦者へ。そのコードが、農業の未来を変える。`;
+                } else {
+                    // API失敗時や海外からの場合のデフォルトメッセージ
+                    heroTitle.textContent = '挑戦者よ、集え。あなたのコードが、農業の未来を変える。';
+                }
+            } catch (error) {
+                console.error("Could not fetch location data:", error);
+                // エラー時のデフォルトメッセージ
+                heroTitle.textContent = '挑戦者よ、集え。あなたのコードが、農業の未来を変える。';
+            }
+            
+            // 初回訪問の記録をlocalStorageに保存
+            localStorage.setItem('visitedAgriHackathonLP', 'true');
+        }
+    };
+
+    // ページ読み込み時にパーソナライズ処理を実行
+    personalizeHeroSection();
+
+
     // --- GSAP Animation ---
     gsap.registerPlugin(ScrollTrigger);
 
@@ -61,7 +102,3 @@ function closeModal(modalId) {
         document.body.style.overflow = ''; // スクロール禁止を解除
     }
 }
-
-// --- FAQ Accordion Icon Logic ---
-// This doesn't need DOMContentLoaded as it uses a simple CSS class toggle
-// The styles are handled in style.css for the [open] attribute
