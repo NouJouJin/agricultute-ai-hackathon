@@ -1,0 +1,59 @@
+/* style.css */
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #1a202c; /* ダークネイビー */
+    color: #E2E8F0; /* ライトグレー */
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.text-glow {
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.7), 0 0 16px rgba(0, 255, 255, 0.5);
+}
+
+.btn-cta {
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 25px rgba(45, 159, 123, 0.4);
+}
+
+.card-hover {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-hover:hover {
+    transform: translateY(-10px) rotateX(5deg) scale(1.03);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* モーダルウィンドウの表示アニメーション */
+.modal.hidden {
+    display: none;
+}
+.modal {
+    animation: fadeIn 0.3s ease-out;
+}
+.modal-content {
+    animation: slideInUp 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* FAQのアコーディオンアイコン */
+details[open] .faq-icon {
+    transform: rotate(45deg);
+}
