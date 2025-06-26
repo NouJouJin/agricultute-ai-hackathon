@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>農業AIハッカソン2025 - 農家と共に創る！生成AIで挑む、農業維新プロジェクト</title>
+
+    <!-- サイトの基本情報 -->
+    <title>農業AIハッカソン2025｜トップランナー農家と挑む、生成AI開発プロジェクト</title>
+    <meta name="description" content="AIで農業の未来を創る、オンラインハッカソンが始動！酪農・ねぎ・みかん農家が抱えるリアルな課題に、あなたの技術でイノベーションを起こしませんか？エンジニア、デザイナー、学生、全ての挑戦者求む。まずは7/18のオンライン説明会へ！">
+
+    <!-- OGP (Open Graph Protocol) タグ -->
+    <meta property="og:url" content="https://noujoujin.github.io/agricultute-ai-hackathon/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="農業AIハッカソン2025｜トップランナー農家と挑む、生成AI開発プロジェクト">
+    <meta property="og:description" content="AIで農業の未来を創る、オンラインハッカソンが始動！酪農・ねぎ・みかん農家が抱えるリアルな課題に、あなたの技術でイノベーションを起こしませんか？">
+    <meta property="og:site_name" content="農業AIハッカソン2025">
+    <meta property="og:image" content="http://metagri-labo.com/wp-content/uploads/2025/06/728f69a01bec5a6b71544720fa0061cb-1.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitterカード -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="農業AIハッカソン2025｜トップランナー農家と挑む、生成AI開発プロジェクト">
+    <meta name="twitter:description" content="AIで農業の未来を創る、オンラインハッカソンが始動！酪農・ねぎ・みかん農家が抱えるリアルな課題に、あなたの技術でイノベーションを起こしませんか？">
+    <meta name="twitter:image" content="http://metagri-labo.com/wp-content/uploads/2025/06/728f69a01bec5a6b71544720fa0061cb-1.png">
+
+    <!-- ファビコン設定 -->
+    <link rel="icon" href="http://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png" type="image/png">
+    <link rel="apple-touch-icon" href="http://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png">
     
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -68,7 +91,7 @@
                 <!-- Card 1: 川上牧場 -->
                 <div class="card-container bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 slide-up" style="transform-style: preserve-3d;">
                     <div class="card-hover p-8 text-center">
-                        <img src="images/kawakami.jpg" alt="川上牧場" class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-emerald-500 object-cover">
+                        <img src="images/kawakami.jpg" alt="川上牧場" class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-emerald-500 object-cover bg-gray-700">
                         <h3 class="text-2xl font-bold">川上 哲也 氏</h3>
                         <p class="text-emerald-400 font-bold">川上牧場 (酪農)</p>
                         <p class="mt-4 text-slate-300">NFTで酪農の未来を拓く、業界のイノベーター。</p>
@@ -78,7 +101,7 @@
                 <!-- Card 2: 彩園なかや -->
                 <div class="card-container bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 slide-up" style="transform-style: preserve-3d;">
                     <div class="card-hover p-8 text-center">
-                        <img src="images/nakaya.jpg" alt="彩園なかや" class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-cyan-500 object-cover">
+                        <img src="images/nakaya.jpg" alt="彩園なかや" class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-cyan-500 object-cover bg-gray-700">
                         <h3 class="text-2xl font-bold">中屋 智博 氏</h3>
                         <p class="text-cyan-400 font-bold">彩園なかや (ねぎ)</p>
                         <p class="mt-4 text-slate-300">「数式ネギ」で農業を科学する、革新的な挑戦者。</p>
@@ -88,7 +111,7 @@
                 <!-- Card 3: トヤマミカン -->
                 <div class="card-container bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 slide-up" style="transform-style: preserve-3d;">
                     <div class="card-hover p-8 text-center">
-                        <img src="images/toyama.jpg" alt="トヤマミカン" class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-orange-500 object-cover">
+                        <img src="images/toyama.jpg" alt="トヤマミカン" class="w-36 h-36 rounded-full mx-auto mb-4 border-4 border-orange-500 object-cover bg-gray-700">
                         <h3 class="text-2xl font-bold">外山 哲 氏</h3>
                         <p class="text-orange-400 font-bold">トヤマミカン (みかん)</p>
                         <p class="mt-4 text-slate-300">次世代技術と温かい心を繋ぐ、顧客体験の探求者。</p>
@@ -110,7 +133,23 @@
             <button onclick="closeModal('modal-kawakami')" class="px-6 py-2 bg-slate-600 text-white font-bold rounded-lg hover:bg-slate-500 transition-colors">閉じる</button>
         </div>
     </div>
-    <!-- Add other modals for Nakaya and Toyama here -->
+    <div id="modal-nakaya" class="modal fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50 hidden" onclick="closeModal('modal-nakaya')">
+        <div class="modal-content bg-gray-800 rounded-lg max-w-2xl w-full p-8 text-left" onclick="event.stopPropagation()">
+            <h3 class="text-3xl font-bold text-cyan-400 mb-4">彩園なかやの挑戦</h3>
+            <p class="text-lg mb-2"><strong>テーマ例:</strong> 100年前の伝統野菜「石倉根深ネギ」復活プロジェクト支援AI</p>
+            <p class="mb-6 text-slate-300">過去の文献や栽培記録を学習し、未知の野菜の最適な栽培条件を予測・提案。また、復活の物語を伝えるマーケティングコンテンツ（キャッチコピー、SNS投稿）を自動生成し、ブランディングを強力に支援する。</p>
+            <button onclick="closeModal('modal-nakaya')" class="px-6 py-2 bg-slate-600 text-white font-bold rounded-lg hover:bg-slate-500 transition-colors">閉じる</button>
+        </div>
+    </div>
+    <div id="modal-toyama" class="modal fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50 hidden" onclick="closeModal('modal-toyama')">
+        <div class="modal-content bg-gray-800 rounded-lg max-w-2xl w-full p-8 text-left" onclick="event.stopPropagation()">
+            <h3 class="text-3xl font-bold text-orange-400 mb-4">トヤマミカンの挑戦</h3>
+            <p class="text-lg mb-2"><strong>テーマ例:</strong> “おもてなしAI”開発プロジェクト</p>
+            <p class="mb-6 text-slate-300">過去の顧客とのやり取りを学習し、農家の温かい人柄や口調を再現した返信文をAIが自動生成。顧客との「顔の見える関係」をテクノロジーで拡張し、ファンエンゲージメントを深める。</p>
+            <button onclick="closeModal('modal-toyama')" class="px-6 py-2 bg-slate-600 text-white font-bold rounded-lg hover:bg-slate-500 transition-colors">閉じる</button>
+        </div>
+    </div>
+
 
     <!-- Section 6: FAQ -->
     <section id="faq" class="py-20 px-6 lg:px-12 bg-gray-900/50">
@@ -124,6 +163,10 @@
                 <details class="bg-gray-800 border border-gray-700 rounded-lg p-4 slide-up cursor-pointer">
                     <summary class="font-bold text-lg list-none flex justify-between items-center">チームでの参加は必須ですか？<span class="faq-icon text-cyan-400 transform transition-transform duration-300">+</span></summary>
                     <p class="mt-4 text-slate-300">個人での参加も、チームでの参加も可能です。チームメンバーを探している方向けに、Discordでのチームビルディングサポートも行います。</p>
+                </details>
+                 <details class="bg-gray-800 border border-gray-700 rounded-lg p-4 slide-up cursor-pointer">
+                    <summary class="font-bold text-lg list-none flex justify-between items-center">どのような技術を使えますか？<span class="faq-icon text-cyan-400 transform transition-transform duration-300">+</span></summary>
+                    <p class="mt-4 text-slate-300">生成AI（大規模言語モデル、画像生成、動画生成など）を中心に、Web技術、モバイルアプリ、IoTなど、課題解決に繋がる技術であれば何でも活用可能です。自由な発想での開発を期待しています。</p>
                 </details>
             </div>
         </div>
