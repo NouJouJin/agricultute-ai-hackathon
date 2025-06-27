@@ -57,3 +57,19 @@ body {
 details[open] .faq-icon {
     transform: rotate(45deg);
 }
+
+/* --- 【ギミック】レスポンシブ背景画像 --- */
+
+/* デフォルト（スマホ用）の背景画像を設定 */
+#hero {
+    background-image: url('http://metagri-labo.com/wp-content/uploads/2025/06/669d0ae718218b77ddbf5ef15209bb5d.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 画面幅が768px以上（PC）の場合の背景画像を設定 */
+@media (min-width: 768px) {
+    #hero {
+        background-image: url('http://metagri-labo.com/wp-content/uploads/2025/06/90c7a7556bd7170b22826773f46893df.png');
+    }
+}
