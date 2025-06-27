@@ -1,45 +1,10 @@
-// script.js
+// script.js (修正版・最終完全版)
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ★★★【ギミック2】パーソナライズヒーローセクション ★★★
-    const personalizeHeroSection = async () => {
-        const heroTitle = document.getElementById('personalized-hero-title');
-        if (!heroTitle) return;
-
-        // 1. 再訪問かどうかをチェック
-        if (localStorage.getItem('visitedAgriHackathonLP')) {
-            // 再訪問の場合のメッセージ
-            heroTitle.textContent = 'おかえりなさい。未来を変える準備は、もうすぐ整います。';
-        } else {
-            // 初回訪問の場合
-            try {
-                // 2. IPアドレスから地域情報を取得
-                const response = await fetch('https://ip-api.com/json/?fields=status,message,regionName,query');
-                if (!response.ok) {
-                    throw new Error('API request failed');
-                }
-                const data = await response.json();
-
-                if (data.status === 'success' && data.regionName) {
-                    // 3. 地域情報に基づいたメッセージに書き換え
-                    heroTitle.textContent = `${data.regionName}の挑戦者へ。そのコードが、農業の未来を変える。`;
-                } else {
-                    // API失敗時や海外からの場合のデフォルトメッセージ
-                    heroTitle.textContent = '挑戦者よ、集え。あなたのコードが、農業の未来を変える。';
-                }
-            } catch (error) {
-                console.error("Could not fetch location data:", error);
-                // エラー時のデフォルトメッセージ
-                heroTitle.textContent = '挑戦者よ、集え。あなたのコードが、農業の未来を変える。';
-            }
-            
-            // 初回訪問の記録をlocalStorageに保存
-            localStorage.setItem('visitedAgriHackathonLP', 'true');
-        }
-    };
-
-    // --- GSAP Animation ---
+    // ===================================================================
+    // ページの表示に必須なアニメーション処理を先に初期化
+    // ===================================================================
     const initAnimations = () => {
         gsap.registerPlugin(ScrollTrigger);
 
@@ -80,13 +45,48 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
-    
-    // ページ読み込み時にパーソナライズ処理を実行し、完了後にアニメーションを初期化
-    personalizeHeroSection().then(() => {
-        initAnimations();
-    });
+
+    // ===================================================================
+    // 追加機能であるパーソナライズ処理
+    // ===================================================================
+    const personalizeHeroSection = async () => {
+        const heroTitle = document.getElementById('personalized-hero-title');
+        if (!heroTitle) return;
+
+        // 再訪問かどうかをチェック
+        if (localStorage.getItem('visitedAgriHackathonLP')) {
+            heroTitle.textContent = 'おかえりなさい。未来を変える準備は、もうすぐ整います。';
+            return; // 再訪問時はここで処理を終了
+        }
+        
+        // 初回訪問の場合
+        try {
+            const response = await fetch('https://ip-api.com/json/?fields=status,message,regionName,query');
+            if (!response.ok) throw new Error('API request failed');
+            
+            const data = await response.json();
+            if (data.status === 'success' && data.regionName) {
+                heroTitle.textContent = `${data.regionName}の挑戦者へ。そのコードが、農業の未来を変える。`;
+            } else {
+                heroTitle.textContent = '挑戦者よ、集え。あなたのコードが、農業の未来を変える。';
+            }
+        } catch (error) {
+            console.error("Could not fetch location data:", error);
+            heroTitle.textContent = '挑戦者よ、集え。あなたのコードが、農業の未来を変える。';
+        } finally {
+            // 訪問記録を保存
+            localStorage.setItem('visitedAgriHackathonLP', 'true');
+        }
+    };
+
+    // ===================================================================
+    // 処理の実行
+    // ===================================================================
+    initAnimations();          // まずアニメーションを初期化してページを表示
+    personalizeHeroSection();  // 次にパーソナライズ処理を非同期で実行
 
 });
+
 
 // --- Modal Logic (Global Scope) ---
 function openModal(modalId) {
