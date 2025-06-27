@@ -39,49 +39,51 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // ページ読み込み時にパーソナライズ処理を実行
-    personalizeHeroSection();
-
-
     // --- GSAP Animation ---
-    gsap.registerPlugin(ScrollTrigger);
+    const initAnimations = () => {
+        gsap.registerPlugin(ScrollTrigger);
 
-    // Hero section animation
-    gsap.from(".fade-in-down", { duration: 1, y: -50, opacity: 0, ease: "power2.out", delay: 0.2 });
-    gsap.from(".fade-in", { duration: 1.5, opacity: 0, ease: "power2.out", delay: 0.5 });
-    gsap.from(".fade-in-up", { duration: 1, y: 50, opacity: 0, ease: "power2.out", delay: 0.8 });
+        // Hero section animation
+        gsap.from(".fade-in-down", { duration: 1, y: -50, opacity: 0, ease: "power2.out", delay: 0.2 });
+        gsap.from(".fade-in", { duration: 1.5, opacity: 0, ease: "power2.out", delay: 0.5 });
+        gsap.from(".fade-in-up", { duration: 1, y: 50, opacity: 0, ease: "power2.out", delay: 0.8 });
 
-    // Scroll-triggered animations for .slide-up elements
-    const slideUpElements = gsap.utils.toArray('.slide-up');
-    slideUpElements.forEach(el => {
-        gsap.from(el, {
-            y: 50,
-            opacity: 0,
-            duration: 0.8,
+        // Scroll-triggered animations for .slide-up elements
+        const slideUpElements = gsap.utils.toArray('.slide-up');
+        slideUpElements.forEach(el => {
+            gsap.from(el, {
+                y: 50,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+
+        // Counter animation
+        gsap.to("#age-counter", {
+            innerText: 69.2,
+            duration: 2,
             ease: "power2.out",
+            snap: { innerText: 0.1 },
             scrollTrigger: {
-                trigger: el,
-                start: "top 85%",
+                trigger: "#age-counter",
+                start: "top 80%",
                 toggleActions: "play none none none"
+            },
+            onUpdate: function() {
+                this.targets()[0].innerHTML = parseFloat(this.targets()[0].innerText).toFixed(1);
             }
         });
-    });
-
-    // Counter animation
-    gsap.to("#age-counter", {
-        innerText: 69.2,
-        duration: 2,
-        ease: "power2.out",
-        snap: { innerText: 0.1 },
-        scrollTrigger: {
-            trigger: "#age-counter",
-            start: "top 80%",
-            toggleActions: "play none none none"
-        },
-        // 小数点第一位まで表示するためのフォーマッタ
-        onUpdate: function() {
-            this.targets()[0].innerHTML = parseFloat(this.targets()[0].innerText).toFixed(1);
-        }
+    };
+    
+    // ページ読み込み時にパーソナライズ処理を実行し、完了後にアニメーションを初期化
+    personalizeHeroSection().then(() => {
+        initAnimations();
     });
 
 });
@@ -91,7 +93,7 @@ function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden'; // 背景のスクロールを禁止
+        document.body.style.overflow = 'hidden';
     }
 }
 
@@ -99,6 +101,6 @@ function closeModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.classList.add('hidden');
-        document.body.style.overflow = ''; // スクロール禁止を解除
+        document.body.style.overflow = '';
     }
 }
