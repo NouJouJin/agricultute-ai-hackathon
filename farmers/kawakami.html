@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>川上牧場の挑戦 - 農業AIハッカソン2025</title>
+    <meta name="robots" content="noindex"> <!-- 検索エンジンにインデックスさせない -->
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Orbitron & Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- 共通のCSSを読み込む -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-[#1a202c] text-slate-200">
+
+    <main class="py-12 md:py-20 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- パンくずリスト（トップへ戻るリンク） -->
+            <div class="mb-8">
+                <a href="../index.html" class="text-cyan-400 hover:underline">< ハッカソンTOPへ戻る</a>
+            </div>
+
+            <!-- ヘッダー情報 -->
+            <header class="text-center mb-12">
+                <img src="../images/kawakami.jpg" alt="川上牧場" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 border-4 border-emerald-500 object-cover bg-gray-700">
+                <h1 class="text-3xl md:text-5xl font-bold text-emerald-400">川上牧場の挑戦</h1>
+                <p class="text-lg text-slate-300 mt-2">テーマ：消費者の「応援」を価値に変える、ファン共創プラットフォーム</p>
+            </header>
+
+            <!-- 動画埋め込みセクション -->
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 border-l-4 border-emerald-500 pl-4">課題共有プレゼンテーション</h2>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg overflow-hidden">
+                    <!-- ここにYouTube等の埋め込みコードを貼り付け -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- 課題サマリーセクション -->
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-emerald-500 pl-4">ハッカソンで挑む課題</h2>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700 space-y-8">
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-300 mb-2">背景 (Why)：なぜ今、この挑戦をするのか？</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            先日の「牛乳の日チャレンジ2025」で、私たちは驚くべき事実に直面しました。消費者の皆さんの「今日の牛乳」という投稿一つひとつが、日本の酪農業が抱える課題を解決する、とてつもない価値を秘めたデータだったのです。飼料価格は高騰し、国内消費は伸び悩む。この厳しい現実を打ち破る鍵は、生産者と消費者がもっと強く、深く、そして楽しく繋がることだと確信しました。あなたの「応援」を、ただの消費で終わらせない。その想いを価値に変え、日本の農業全体を元気にする。この壮大な挑戦の、最初のプロトタイプを、あなたに託したいのです。
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-300 mb-2">求めるもの (What)：何を開発してほしいか？</h3>
+                        <p class="text-slate-300 mb-4">コンセプトは**「Metagri Fan-Token System」**。消費者の応援行動を価値化するプラットフォームのMVP（最小機能製品）です。</p>
+                        <ul class="list-disc list-inside text-slate-300 space-y-3 pl-2">
+                            <li>
+                                <strong>消費者向け投稿アプリ（Web or LINEミニアプリ）:</strong>
+                                <ul class="list-circle list-inside text-slate-400 mt-1 pl-4">
+                                    <li>牛乳や乳製品のレシート/商品を撮影して投稿する機能</li>
+                                    <li>投稿が承認されると、独自の「ファントークン」がもらえる仕組み</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>企業向け分析ダッシュボード:</strong>
+                                <ul class="list-circle list-inside text-slate-400 mt-1 pl-4">
+                                    <li>投稿されたデータ（いつ、どこで、何が）をリアルタイムで可視化する機能</li>
+                                    <li>不正投稿を検知・フィルタリングする仕組みのアイデア</li>
+                                </ul>
+                            </li>
+                             <li>
+                                <strong>トークン活用アイデア:</strong>
+                                <ul class="list-circle list-inside text-slate-400 mt-1 pl-4">
+                                    <li>貯まったトークンで何ができるか？（例：限定グッズ交換、産地訪問ツアー）そのアイデアと画面設計</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-300 mb-2">未来像 (Impact)：この挑戦の先に広がる世界</h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            このハッカソンは、単なるアプリ開発ではありません。日本の農業DXを牽引する、巨大なエコシステムを創り上げるための第一歩です。
+                        </p>
+                        <div class="border border-gray-700 rounded-lg p-4 bg-gray-900/50">
+                            <p class="font-bold text-center">BtoB (SaaS事業) → BtoC (ゲーム事業) へ</p>
+                            <div class="flex items-center justify-center space-x-4 my-2">
+                                <span class="text-sm md:text-base">乳製品</span>
+                                <span class="text-cyan-400 font-bold text-lg">>></span>
+                                <span class="text-sm md:text-base">米・野菜</span>
+                                <span class="text-cyan-400 font-bold text-lg">>></span>
+                                <span class="text-sm md:text-base">水産・畜産</span>
+                                <span class="text-cyan-400 font-bold text-lg">>></span>
+                                <span class="text-emerald-400 font-bold text-base md:text-lg">国産食料品プラットフォーム</span>
+                            </div>
+                            <p class="text-center font-bold text-lg mt-4">究極の目標：食育ゲーミフィケーションアプリ <span class="text-orange-400 font-orbitron">"Milk Monster"</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 関連資料セクション -->
+            <section>
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-emerald-500 pl-4">関連資料・リンク</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="#" class="block bg-gray-700 p-4 rounded-lg text-center font-bold hover:bg-gray-600 transition-colors">発表スライドをダウンロード (PDF)</a>
+                    <a href="https://discord.gg/hyw3AkKa8e" target="_blank" class="block bg-gray-700 p-4 rounded-lg text-center font-bold hover:bg-gray-600 transition-colors">Discordで質問する</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
