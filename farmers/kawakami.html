@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>川上牧場の挑戦 - 農業AIハッカソン2025</title>
-    <meta name="robots" content="noindex"> <!-- 検索エンジンにインデックスさせない -->
+    <meta name="robots" content="noindex">
 
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,89 +22,81 @@
     <main class="py-12 md:py-20 px-4 md:px-8">
         <div class="max-w-4xl mx-auto">
             
-            <!-- パンくずリスト（トップへ戻るリンク） -->
             <div class="mb-8">
                 <a href="../index.html" class="text-cyan-400 hover:underline">< ハッカソンTOPへ戻る</a>
             </div>
 
-            <!-- ヘッダー情報 -->
             <header class="text-center mb-12">
                 <img src="../images/kawakami.jpg" alt="川上牧場" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 border-4 border-emerald-500 object-cover bg-gray-700">
                 <h1 class="text-3xl md:text-5xl font-bold text-emerald-400">川上牧場の挑戦</h1>
-                <p class="text-lg text-slate-300 mt-2">テーマ：消費者の「応援」を価値に変える、ファン共創プラットフォーム</p>
+                <p class="text-lg text-slate-300 mt-2">テーマ：データとAIで、酪農の未来を切り拓くDXプロジェクト</p>
             </header>
 
-            <!-- 動画埋め込みセクション -->
             <section class="mb-16">
                 <h2 class="text-2xl md:text-3xl font-bold mb-4 border-l-4 border-emerald-500 pl-4">課題共有プレゼンテーション</h2>
                 <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg overflow-hidden">
-                    <!-- ここにYouTube等の埋め込みコードを貼り付け -->
                     <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
 
-            <!-- 課題サマリーセクション -->
             <section class="mb-16">
                 <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-emerald-500 pl-4">ハッカソンで挑む課題</h2>
                 <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700 space-y-8">
                     
                     <div>
-                        <h3 class="text-xl font-bold text-emerald-300 mb-2">背景 (Why)：なぜ今、この挑戦をするのか？</h3>
+                        <h3 class="text-xl font-bold text-emerald-300 mb-2">背景 (Why)：なぜ、この壮大な挑戦をするのか？</h3>
                         <p class="text-slate-300 leading-relaxed">
-                            先日の「牛乳の日チャレンジ2025」で、私たちは驚くべき事実に直面しました。消費者の皆さんの「今日の牛乳」という投稿一つひとつが、日本の酪農業が抱える課題を解決する、とてつもない価値を秘めたデータだったのです。飼料価格は高騰し、国内消費は伸び悩む。この厳しい現実を打ち破る鍵は、生産者と消費者がもっと強く、深く、そして楽しく繋がることだと確信しました。あなたの「応援」を、ただの消費で終わらせない。その想いを価値に変え、日本の農業全体を元気にする。この壮大な挑戦の、最初のプロトタイプを、あなたに託したいのです。
+                            私は、世界中の誰もが、いつでもどこでも美味しい牛乳・乳製品を楽しめる未来を本気で創りたいと考えています。しかし、日本の酪農業界は、需要と供給のミスマッチという根深い課題を抱えています。この問題を解決するには、生産者だけの努力では限界があります。消費者一人ひとりの「応援」をデータとして可視化し、それを力に変える。AIの進化が激しい今だからこそ、大きな投資をせずとも、価値あるプロトタイプを生み出せると信じています。この挑戦は、私の牧場のためだけではありません。日本の、そして世界の農業の持続可能性に繋がる、大きな一歩なのです。
                         </p>
                     </div>
 
                     <div>
-                        <h3 class="text-xl font-bold text-emerald-300 mb-2">求めるもの (What)：何を開発してほしいか？</h3>
-                        <p class="text-slate-300 mb-4">コンセプトは**「Metagri Fan-Token System」**。消費者の応援行動を価値化するプラットフォームのMVP（最小機能製品）です。</p>
-                        <ul class="list-disc list-inside text-slate-300 space-y-3 pl-2">
-                            <li>
-                                <strong>消費者向け投稿アプリ（Web or LINEミニアプリ）:</strong>
-                                <ul class="list-circle list-inside text-slate-400 mt-1 pl-4">
-                                    <li>牛乳や乳製品のレシート/商品を撮影して投稿する機能</li>
-                                    <li>投稿が承認されると、独自の「ファントークン」がもらえる仕組み</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>企業向け分析ダッシュボード:</strong>
-                                <ul class="list-circle list-inside text-slate-400 mt-1 pl-4">
-                                    <li>投稿されたデータ（いつ、どこで、何が）をリアルタイムで可視化する機能</li>
-                                    <li>不正投稿を検知・フィルタリングする仕組みのアイデア</li>
-                                </ul>
-                            </li>
-                             <li>
-                                <strong>トークン活用アイデア:</strong>
-                                <ul class="list-circle list-inside text-slate-400 mt-1 pl-4">
-                                    <li>貯まったトークンで何ができるか？（例：限定グッズ交換、産地訪問ツアー）そのアイデアと画面設計</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <h3 class="text-xl font-bold text-emerald-300 mb-2">挑戦テーマ (What)：開発してほしいもの</h3>
+                        <div class="space-y-6">
+                            <div class="border border-emerald-600 bg-emerald-900/30 p-4 rounded-lg">
+                                <h4 class="font-bold text-lg text-emerald-200">【最優先テーマ】牛乳の需給調整を最適化するシステム</h4>
+                                <p class="text-slate-300 mt-2">消費者のリアルな購買データを収集・分析し、生産者と関係機関（JA, J-milk等）が需給のミスマッチを解消するための意思決定を支援する、データプラットフォームのプロトタイプ。</p>
+                            </div>
+                            <div class="border border-gray-600 p-4 rounded-lg">
+                                <h4 class="font-bold text-lg text-slate-200">【次点テーマ】食育ゲーム「ミルクモンスター（ミルモン）」</h4>
+                                <p class="text-slate-300 mt-2">消費者が牛乳・乳製品の成分表を写真でアップすると、その特徴に応じたモンスターが生まれるゲームアプリのプロトタイプ。楽しみながら消費を促し、ファンを育成する。</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div>
                         <h3 class="text-xl font-bold text-emerald-300 mb-2">未来像 (Impact)：この挑戦の先に広がる世界</h3>
-                        <p class="text-slate-300 leading-relaxed mb-4">
-                            このハッカソンは、単なるアプリ開発ではありません。日本の農業DXを牽引する、巨大なエコシステムを創り上げるための第一歩です。
-                        </p>
-                        <div class="border border-gray-700 rounded-lg p-4 bg-gray-900/50">
-                            <p class="font-bold text-center">BtoB (SaaS事業) → BtoC (ゲーム事業) へ</p>
-                            <div class="flex items-center justify-center space-x-4 my-2">
-                                <span class="text-sm md:text-base">乳製品</span>
-                                <span class="text-cyan-400 font-bold text-lg">>></span>
-                                <span class="text-sm md:text-base">米・野菜</span>
-                                <span class="text-cyan-400 font-bold text-lg">>></span>
-                                <span class="text-sm md:text-base">水産・畜産</span>
-                                <span class="text-cyan-400 font-bold text-lg">>></span>
-                                <span class="text-emerald-400 font-bold text-base md:text-lg">国産食料品プラットフォーム</span>
-                            </div>
-                            <p class="text-center font-bold text-lg mt-4">究極の目標：食育ゲーミフィケーションアプリ <span class="text-orange-400 font-orbitron">"Milk Monster"</span></p>
+                        <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-6 text-center">
+                            <p class="font-bold text-cyan-300 mb-2">スモールスタートから、全国展開のSaaSモデルへ</p>
+                            <p class="text-4xl font-orbitron font-black text-white">200戸</p>
+                            <p class="text-slate-300">の地域組合への展開を足掛かりに、最終的には全国の農家が利用できるプラットフォームを目指します。牛乳から始まり、他の農作物へと展開する壮大なロードマップです。</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 関連資料セクション -->
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-emerald-500 pl-4">開発者への約束（私たちの本気度）</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                        <h3 class="font-bold text-lg text-cyan-300 mb-2">1. 共同事業開発パートナーシップ</h3>
+                        <p class="text-slate-300">これは発注ではありません。採択チームとは**1年間・週1回**のオンラインMTGを行い、事業を共にグロースさせるパートナーとして、私が全力でコミットします。</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                        <h3 class="font-bold text-lg text-cyan-300 mb-2">2. 圧倒的な実証フィールド</h3>
+                        <p class="text-slate-300">私の牧場はもちろん、**約200戸**が所属する地域組合を、あなたのプロトタイプの最初のユーザー候補として紹介・推薦します。リアルなフィードバックが、プロダクトを急成長させます。</p>
+                    </div>
+                     <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                        <h3 class="font-bold text-lg text-cyan-300 mb-2">3. リーンな資金計画</h3>
+                        <p class="text-slate-300">AIの進化が速い今、大きな初期投資はリスクです。まずは**費用をかけない形**で価値を証明し、そのデータを持ってJAや全農と共に大きな資金調達を目指す、現実的な戦略を共に考えます。</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                        <h3 class="font-bold text-lg text-cyan-300 mb-2">4. 特別な副賞</h3>
+                        <p class="text-slate-300">感謝のしるしとして、私の牧場への**特別ご招待ツアー**をお約束します。開発の裏話でもしながら、最高の牛乳で乾杯しましょう！</p>
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-emerald-500 pl-4">関連資料・リンク</h2>
                 <div class="grid md:grid-cols-2 gap-4">
@@ -112,7 +104,6 @@
                     <a href="https://discord.gg/hyw3AkKa8e" target="_blank" class="block bg-gray-700 p-4 rounded-lg text-center font-bold hover:bg-gray-600 transition-colors">Discordで質問する</a>
                 </div>
             </section>
-
         </div>
     </main>
 
