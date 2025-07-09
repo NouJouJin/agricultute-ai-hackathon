@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トヤマミカンの挑戦 - 農業AIハッカソン2025</title>
+    <meta name="robots" content="noindex"> <!-- 検索エンジンにインデックスさせない -->
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Orbitron & Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- 共通のCSSを読み込む -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-[#1a202c] text-slate-200">
+
+    <main class="py-12 md:py-20 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- パンくずリスト（トップへ戻るリンク） -->
+            <div class="mb-8">
+                <a href="../index.html" class="text-cyan-400 hover:underline">< ハッカソンTOPへ戻る</a>
+            </div>
+
+            <!-- ヘッダー情報 -->
+            <header class="text-center mb-12">
+                <img src="../images/toyama.jpg" alt="トヤマミカン" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 border-4 border-orange-500 object-cover bg-gray-700">
+                <h1 class="text-3xl md:text-5xl font-bold text-orange-400">トヤマミカンの挑戦</h1>
+                <p class="text-lg text-slate-300 mt-2">テーマ：テクノロジーで「人の温かみ」を拡張する</p>
+            </header>
+
+            <!-- 動画埋め込みセクション -->
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 border-l-4 border-orange-500 pl-4">課題共有プレゼンテーション</h2>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg overflow-hidden">
+                    <!-- ここにYouTube等の埋め込みコードを貼り付け -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- 課題サマリーセクション -->
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-orange-500 pl-4">ハッカソンで挑む課題</h2>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700 space-y-8">
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-orange-300 mb-2">背景 (Why)：なぜ今、この挑戦をするのか？</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            こんにちは、トヤマミカンです。私のような小さな農家にとって、お客様一人ひとりとの「顔の見える関係」は何よりの宝物です。でも、嬉しい悲鳴なのですが、応援してくださる方が増えるほど、すべてのお問い合わせやレビューに、心を込めた私“らしい”返信をするのが難しくなってきました。定型文では伝わらない、この感謝の気持ちや温かみを、テクノロジーで失うのではなく、むしろ拡張したい。AIを、業務を効率化するだけの無機質なツールではなく、私の「分身」であり「最高の相棒」にしたいのです。この想いに共感してくれるあなたと、新しい顧客体験の形を創りたいです。
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-orange-300 mb-2">求めるもの (What)：何を開発してほしいか？</h3>
+                        <p class="text-slate-300 mb-4">コンセプトは**「おもてなしAI」**。私の人柄を学習し、顧客対応を支援するパーソナルAI執事のプロトタイプです。</p>
+                        <ul class="list-disc list-inside text-slate-300 space-y-3 pl-2">
+                            <li>
+                                <strong>高精度な返信文生成AI:</strong>
+                                <ul class="list-circle list-inside text-slate-400 mt-1 pl-4">
+                                    <li>過去の顧客対応データ（匿名化済）を学習し、私の口調や言葉遣い、絵文字の使い方まで再現する。</li>
+                                    <li>お客様からのレビューや問い合わせ内容に応じて、複数の返信文案を提案する機能。</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>シンプルな管理インターフェース:</strong>
+                                <ul class="list-circle list-inside text-slate-400 mt-1 pl-4">
+                                    <li>私が毎日ストレスなく使える、直感的で分かりやすい管理画面。</li>
+                                    <li>AIが提案した文章を、送信前に簡単に手直しできる編集機能。</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-orange-300 mb-2">未来の約束 (Our Commitment)：開発チームへの本気度</h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            この挑戦は、作って終わりではありません。あなたの才能と時間を投資していただくからには、私も本気で向き合います。
+                        </p>
+                        <div class="border border-gray-700 rounded-lg p-4 bg-gray-900/50 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-center text-lg mb-2">実証とデータを提供</h4>
+                                <ul class="list-disc list-inside text-slate-400 text-sm space-y-1">
+                                    <li>私の農園が、最初の実証フィールドです。</li>
+                                    <li>開発に必要なリアルな顧客対応データ（匿名化済）を提供します。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-center text-lg mb-2">スピード感と費用負担</h4>
+                                <ul class="list-disc list-inside text-slate-400 text-sm space-y-1">
+                                    <li>**ハッカソン後3ヶ月**での本格利用を目指します。</li>
+                                    <li>開発に必要な費用は、まず**私が事業主体となって捻出**します。</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <p class="text-center mt-4 text-sm text-slate-400">まずは私個人の最強ツールとして完成させ、いずれは全国の小規模農家を救うSaaSに育てていくのが夢です！</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 関連資料セクション -->
+            <section>
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-orange-500 pl-4">関連資料・リンク</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="#" class="block bg-gray-700 p-4 rounded-lg text-center font-bold hover:bg-gray-600 transition-colors">発表スライドをダウンロード (PDF)</a>
+                    <a href="https://discord.gg/hyw3AkKa8e" target="_blank" class="block bg-gray-700 p-4 rounded-lg text-center font-bold hover:bg-gray-600 transition-colors">Discordで質問する</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
