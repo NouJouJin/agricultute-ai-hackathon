@@ -1,0 +1,114 @@
+//nakaya.html
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彩園なかやの挑戦 - 農業AIハッカソン2025</title>
+    <meta name="robots" content="noindex"> <!-- 検索エンジンにインデックスさせない -->
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Orbitron & Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- 共通のCSSを読み込む -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-[#1a202c] text-slate-200">
+
+    <main class="py-12 md:py-20 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- パンくずリスト（トップへ戻るリンク） -->
+            <div class="mb-8">
+                <a href="../index.html" class="text-cyan-400 hover:underline">< ハッカソンTOPへ戻る</a>
+            </div>
+
+            <!-- ヘッダー情報 -->
+            <header class="text-center mb-12">
+                <img src="../images/nakaya.jpg" alt="彩園なかや" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 border-4 border-cyan-500 object-cover bg-gray-700">
+                <h1 class="text-3xl md:text-5xl font-bold text-cyan-400">彩園なかやの挑戦</h1>
+                <p class="text-lg text-slate-300 mt-2">テーマ：データサイエンスで「農業のリスク」を予測し、最適化する</p>
+            </header>
+
+            <!-- 動画埋め込みセクション -->
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 border-l-4 border-cyan-500 pl-4">課題共有プレゼンテーション</h2>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-800 rounded-lg overflow-hidden">
+                    <!-- ここにYouTube等の埋め込みコードを貼り付け -->
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- 課題サマリーセクション -->
+            <section class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-cyan-500 pl-4">ハッカソンで挑む課題</h2>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700 space-y-8">
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-cyan-300 mb-2">背景 (Why)：なぜ、この知的な挑戦をするのか？</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            農業は、自然という予測不能な要素と常に向き合うビジネスです。長年の勘や経験も大切ですが、それだけでは立ち行かない時代が来ています。私は、農業経営を「アート」から「サイエンス」へと昇華させたい。データに基づきリスクを予測し、最適なリソース配分を行う。そうすることで、農業はもっと安定し、持続可能で、知的に面白い産業になるはずです。このハッカソンで求めるのは、単なるツールではありません。農業という複雑な方程式を、データサイエンスの力で共に解き明かしてくれる、最高の「共同研究者」なのです。
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-cyan-300 mb-2">挑戦テーマ (What)：開発してほしいもの</h3>
+                        <div class="space-y-6">
+                            <div class="border border-cyan-600 bg-cyan-900/30 p-4 rounded-lg">
+                                <h4 class="font-bold text-lg text-cyan-200">【最優先テーマ】長期の病害虫発生予測AI</h4>
+                                <p class="text-slate-300 mt-2">過去の気象データ、栽培記録、周辺地域の発生状況などを複合的に学習し、数週間～数ヶ月先の病害虫リスクを予測するモデル。農家が「先手」を打つための、早期警戒システムを開発してほしい。</p>
+                            </div>
+                            <div class="border border-gray-600 p-4 rounded-lg">
+                                <h4 class="font-bold text-lg text-slate-200">【次点テーマ】販路のリスク・リターン最適化ポートフォリオ</h4>
+                                <p class="text-slate-300 mt-2">市場価格の変動データや取引先の特性を分析し、どの販路にどれだけの割合で出荷するのが最も経営的に最適か、そのポートフォリオを提案するシミュレーションツール。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-cyan-300 mb-2">開発者への約束 (Our Commitment)：私たちの本気度</h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            この挑戦は、一朝一夕に答えが出るものではありません。だからこそ、腰を据えて本質的な開発に取り組める環境を約束します。
+                        </p>
+                        <div class="border border-gray-700 rounded-lg p-4 bg-gray-900/50 grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-bold text-center text-lg mb-2">長期的な共同研究開発</h4>
+                                <ul class="list-disc list-inside text-slate-400 text-sm space-y-1">
+                                    <li>**1年間（1サイクル）**にわたる、週1回の定例MTGで、本質的な価値を追求します。</li>
+                                    <li>私の農園と、蓄積したリアルなデータがあなたの実験室です。</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-center text-lg mb-2">地に足のついた事業戦略</h4>
+                                <ul class="list-disc list-inside text-slate-400 text-sm space-y-1">
+                                    <li>まずは私の農園で完璧なツールを作り上げます。</li>
+                                    <li>その成果を元に、全国展開を視野に入れた汎用的なモデルへと昇華させます。</li>
+                                    <li>価値が証明できれば、資金調達も共に検討します。</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <p class="text-center mt-4 text-sm text-slate-400">短期的な成果ではなく、長く使える本質的なプロダクトを、一緒に創りませんか。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 関連資料セクション -->
+            <section>
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 border-l-4 border-cyan-500 pl-4">関連資料・リンク</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="#" class="block bg-gray-700 p-4 rounded-lg text-center font-bold hover:bg-gray-600 transition-colors">発表スライドをダウンロード (PDF)</a>
+                    <a href="https://discord.gg/hyw3AkKa8e" target="_blank" class="block bg-gray-700 p-4 rounded-lg text-center font-bold hover:bg-gray-600 transition-colors">Discordで質問する</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
