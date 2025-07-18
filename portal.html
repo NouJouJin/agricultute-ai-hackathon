@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ハッカソン参加者ポータル - 農業AIハッカソン2025</title>
-    <meta name="robots" content="noindex"> <!-- このページは検索結果に表示させない -->
+    <meta name="robots" content="noindex">
 
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,6 +16,13 @@
 
     <!-- 共通のCSSを読み込む -->
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* スムーズスクロールのためのCSS */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="bg-[#1a202c] text-slate-200">
 
@@ -23,13 +30,23 @@
         <div class="max-w-4xl mx-auto">
             
             <!-- ヘッダー -->
-            <header class="text-center mb-16">
+            <header class="text-center mb-12">
                 <a href="index.html" class="inline-block hover:opacity-80 transition-opacity mb-4" aria-label="ハッカソントップページへ">
                     <img src="http://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png" alt="Metagri研究所" class="h-12 mx-auto">
                 </a>
                 <h1 class="text-3xl md:text-5xl font-bold text-slate-100 font-orbitron">ようこそ、挑戦者たちへ。</h1>
                 <p class="text-lg text-slate-300 mt-2">ここがあなたの冒険の拠点です。</p>
             </header>
+            
+            <!-- ★★★ ナビゲーションメニューを追加 ★★★ -->
+            <nav class="bg-gray-800/50 border border-gray-700 rounded-lg p-4 mb-16 sticky top-4 z-40 backdrop-blur-sm">
+                <ul class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-8">
+                    <li><a href="#guide" class="font-bold hover:text-cyan-400 transition-colors">参加フロー</a></li>
+                    <li><a href="#timeline" class="font-bold hover:text-cyan-400 transition-colors">説明会タイムライン</a></li>
+                    <li><a href="#discord-reaction" class="font-bold hover:text-cyan-400 transition-colors">Discord参加表明</a></li>
+                    <li><a href="#submission-form" class="font-bold hover:text-cyan-400 transition-colors">提出フォーム</a></li>
+                </ul>
+            </nav>
 
             <!-- 参加導線セクション -->
             <section class="mb-20">
@@ -58,6 +75,84 @@
                     </div>
                 </div>
             </section>
+            
+               <!-- ★★★ 説明会タイムラインセクションを追加 ★★★ -->
+            <section id="timeline" class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-cyan-400">TIMELINE - 7/18 説明会プログラム -</h2>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700 space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-24 font-bold text-cyan-300">20:00-20:10</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold">オープニング＆ハッカソン全体像紹介</h3>
+                            <p class="text-sm text-slate-400">なぜ今「農業×AI」なのか？ハッカソンの目的と未来像を共有します。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-24 font-bold text-emerald-300">20:10-20:35</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold">【セッション1】川上牧場の挑戦</h3>
+                            <p class="text-sm text-slate-400">データで需給ミスマッチという巨大な敵を倒す、壮大な挑戦状。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-24 font-bold text-orange-300">20:35-21:00</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold">【セッション2】トヤマミカンの挑戦</h3>
+                            <p class="text-sm text-slate-400">AIに“私の心”を宿らせる、新しい顧客体験への挑戦状。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-24 font-bold text-blue-300">21:00-21:25</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold">【セッション3】彩園なかやの挑戦</h3>
+                            <p class="text-sm text-slate-400">データサイエンスで「農業のリスク」を予測・最適化する挑戦状。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-24 font-bold text-slate-300">21:25-21:30</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold">メンター紹介＆クロージング</h3>
+                            <p class="text-sm text-slate-400">あなたの開発を支えるサポート体制と、今後の流れをご案内します。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ★★★ Discordリアクション説明セクションを追加 ★★★ -->
+            <section id="discord-reaction" class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-cyan-400">DISCORD - リアクションで参加表明！ -</h2>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700 text-center">
+                    <p class="text-slate-300 mb-4">ハッカソンへの参加表明は、Discordの専用チャンネルでリアクションを押すだけ！</p>
+                    <img src="https://i.imgur.com/your-discord-screenshot.png" alt="Discordリアクションの案内" class="mx-auto rounded-md mb-4 border border-gray-600">
+                    <p class="font-bold text-lg mb-2">リアクションを押すと...</p>
+                    <ul class="list-disc list-inside inline-block text-left text-slate-300 space-y-1">
+                        <li>あなたに**「挑戦者」ロール**が付与されます。</li>
+                        <li>開発に必要な**参加者限定チャンネル**が閲覧可能になります。</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-red-400 font-bold">※チーム参加の場合も、メンバー全員がそれぞれリアクションをお願いします。</p>
+                    <a href="https://discord.gg/hyw3AkKa8e" target="_blank" class="inline-block mt-6 px-8 py-3 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-500 transition-colors">💬 Discordの該当チャンネルへ</a>
+                </div>
+            </section>
+
+            <!-- ★★★ 提出フォームイメージセクションを追加 ★★★ -->
+            <section id="submission-form" class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-cyan-400">SUBMISSION - 提出フォームのイメージ -</h2>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700">
+                    <p class="text-center text-slate-300 mb-6">最終提出では、主に以下の情報が必要となります。開発を進める上での参考にしてください。</p>
+                    <div class="space-y-4 text-slate-300">
+                        <div class="p-4 bg-gray-900/50 rounded-md"><strong>1. 基本情報：</strong>代表者氏名、メールアドレス、チーム名など</div>
+                        <div class="p-4 bg-gray-900/50 rounded-md"><strong>2. 挑戦テーマ：</strong>どの農家さんの課題に挑戦したか</div>
+                        <div class="p-4 bg-gray-900/50 rounded-md"><strong>3. プロトタイプ情報：</strong>作品名、ひとことアピール</div>
+                        <div class="p-4 bg-gray-900/50 rounded-md"><strong>4. 成果物URL (必須)：</strong><span class="text-red-400">*</span>GitHubリポジトリ と <span class="text-red-400">*</span>デモのURL</div>
+                        <div class="p-4 bg-gray-900/50 rounded-md"><strong>5. (任意) 補足情報：</strong>説明資料のURL、利用技術など</div>
+                        <div class="p-4 bg-gray-900/50 rounded-md"><strong>6. 規約への同意：</strong><a href="terms.html" target="_blank" class="text-cyan-400 hover:underline">こちら</a>の規約への同意チェック</div>
+                    </div>
+                     <p class="font-bold text-lg mt-6 text-center">【最終提出期限】</p>
+                     <p class="text-3xl font-orbitron font-bold text-red-400 text-center">2025年 8月20日(水) 23:59</p>
+                     <a href="[提出フォームのURL]" target="_blank" class="block mt-4 w-full text-center px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-500 transition-colors">🚀 提出フォームはこちら（8月公開予定）</a>
+                </div>
+            </section>
+
             
             <!-- 説明会コンテンツセクション -->
             <section class="mb-20">
