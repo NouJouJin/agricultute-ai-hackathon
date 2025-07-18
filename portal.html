@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハッカソン参加者ポータル - 農業AIハッカソン2025</title>
+    <meta name="robots" content="noindex"> <!-- このページは検索結果に表示させない -->
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Orbitron & Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- 共通のCSSを読み込む -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#1a202c] text-slate-200">
+
+    <main class="py-12 md:py-20 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- ヘッダー -->
+            <header class="text-center mb-16">
+                <a href="index.html" class="inline-block hover:opacity-80 transition-opacity mb-4" aria-label="ハッカソントップページへ">
+                    <img src="http://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png" alt="Metagri研究所" class="h-12 mx-auto">
+                </a>
+                <h1 class="text-3xl md:text-5xl font-bold text-slate-100 font-orbitron">ようこそ、挑戦者たちへ。</h1>
+                <p class="text-lg text-slate-300 mt-2">ここがあなたの冒険の拠点です。</p>
+            </header>
+
+            <!-- 参加導線セクション -->
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-cyan-400">HACKATHON GUIDE - 参加フロー -</h2>
+                <div class="space-y-12 text-left">
+                    <!-- ステップ1 -->
+                    <div class="relative pl-12 md:pl-16">
+                        <div class="absolute top-0 left-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-cyan-500 text-white font-orbitron text-2xl font-bold">1</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-cyan-400 mb-2">課題を深く理解する</h3>
+                        <p class="text-slate-300 mb-4">全ての原点、農家さんたちの"魂の叫び"を再確認しましょう。説明会の録画で、課題の核心を掴んでください。</p>
+                        <a href="https://www.youtube.com/watch?v=YOUR_RECORDING_ID" target="_blank" class="inline-block px-5 py-2 bg-slate-700 text-white font-bold rounded-lg hover:bg-slate-600 transition-colors text-sm">🎥 説明会録画を視聴する</a>
+                    </div>
+                    <!-- ステップ2 -->
+                    <div class="relative pl-12 md:pl-16">
+                        <div class="absolute top-0 left-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-emerald-500 text-white font-orbitron text-2xl font-bold">2</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-emerald-400 mb-2">コミュニティで繋がる</h3>
+                        <p class="text-slate-300 mb-4">開発拠点となるDiscordサーバーへ。ここで仲間と交流し、メンターに質問し、開発を加速させましょう。</p>
+                        <a href="https://discord.gg/hyw3AkKa8e" target="_blank" class="inline-block px-5 py-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-500 transition-colors text-sm">💬 Discordに参加する</a>
+                    </div>
+                    <!-- ステップ3 -->
+                    <div class="relative pl-12 md:pl-16">
+                        <div class="absolute top-0 left-0 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-red-500 text-white font-orbitron text-2xl font-bold">3</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-red-400 mb-2">未来への第一歩を提出する</h3>
+                        <p class="text-slate-300 mb-4">あなたのアイデアと情熱が詰まったプロトタイプを、世界に示しましょう。期限までに提出フォームからご応募ください。</p>
+                        <a href="[提出フォームのURL]" target="_blank" class="inline-block px-5 py-2 bg-red-600 text-white font-bold rounded-lg hover:bg-red-500 transition-colors text-sm">🚀 提出フォームへ</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 説明会コンテンツセクション -->
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-cyan-400">CONTENTS - 課題テーマ一覧 -</h2>
+                <p class="text-center text-slate-300 mb-8">各農家の詳細ページで、課題の背景や未来の展望を再確認できます。</p>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <a href="farmers/kawakami.html" class="block bg-gray-800 p-6 rounded-lg border border-gray-700 card-hover">
+                        <img src="images/kawakami.jpg" alt="川上牧場" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-emerald-500 object-cover">
+                        <h3 class="font-bold text-emerald-400">川上牧場の挑戦</h3>
+                        <p class="text-sm text-slate-400 mt-1">酪農DX</p>
+                    </a>
+                    <a href="farmers/toyama.html" class="block bg-gray-800 p-6 rounded-lg border border-gray-700 card-hover">
+                        <img src="images/toyama.jpg" alt="トヤマミカン" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-orange-500 object-cover">
+                        <h3 class="font-bold text-orange-400">トヤマミカンの挑戦</h3>
+                        <p class="text-sm text-slate-400 mt-1">おもてなしAI</p>
+                    </a>
+                     <a href="farmers/nakaya.html" class="block bg-gray-800 p-6 rounded-lg border border-gray-700 card-hover">
+                        <img src="images/nakaya.jpg" alt="彩園なかや" class="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-cyan-500 object-cover">
+                        <h3 class="font-bold text-cyan-400">彩園なかやの挑戦</h3>
+                        <p class="text-sm text-slate-400 mt-1">リスク予測</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 提出物詳細セクション -->
+            <section class="mb-20">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-cyan-400">SUBMISSION - 提出物について -</h2>
+                <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700">
+                    <p class="text-center text-slate-300 mb-6">最終提出では、以下の情報が必要となります。事前にご確認ください。</p>
+                    <ul class="space-y-4">
+                        <li class="p-4 bg-gray-900/50 rounded-md"><strong>1. 代表者・チーム情報：</strong>氏名、メールアドレス、チーム名など</li>
+                        <li class="p-4 bg-gray-900/50 rounded-md"><strong>2. プロトタイプ情報：</strong>名称、概要、挑戦した課題テーマ</li>
+                        <li class="p-4 bg-gray-900/50 rounded-md"><strong>3. GitHubリポジトリURL：</strong>ソースコードを格納した公開リポジトリ</li>
+                        <li class="p-4 bg-gray-900/50 rounded-md"><strong>4. デモURL：</strong>実際に動作を確認できるWebアプリや動画のリンク</li>
+                        <li class="p-4 bg-gray-900/50 rounded-md"><strong>5. (任意) 説明資料URL：</strong>使い方や技術構成をまとめた資料のリンク</li>
+                        <li class="p-4 bg-gray-900/50 rounded-md"><strong>6. 参加規約への同意：</strong><a href="terms.html" target="_blank" class="text-cyan-400 hover:underline">こちら</a>の規約をご確認ください</li>
+                    </ul>
+                     <p class="font-bold text-lg mt-6 text-center">【最終提出期限】</p>
+                     <p class="text-3xl font-orbitron font-bold text-red-400 text-center">2025年 8月20日(水) 23:59</p>
+                </div>
+            </section>
+
+            <!-- スケジュールセクション -->
+            <section>
+                 <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-cyan-400">SCHEDULE - 全体スケジュール -</h2>
+                 <div class="text-center text-slate-400 bg-gray-800 p-4 rounded-lg border border-gray-700">
+                    <p>
+                        <span class="font-bold text-white">7/18:</span> 事前説明会 → 
+                        <span class="font-bold text-white">7/21〜8/20:</span> 開発期間 → 
+                        <span class="font-bold text-white">8/20:</span> 最終提出 → 
+                        <span class="font-bold text-white">8/下旬:</span> 審査＆結果発表
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="py-12 text-center text-slate-400 bg-[#121822] mt-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-sm">© 2025 Metagri研究所. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
