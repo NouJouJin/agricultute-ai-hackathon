@@ -38,11 +38,14 @@
                 <p class="text-lg text-slate-300 mt-2">ここがあなたの冒険の拠点です。</p>
             </header>
             
-            <!-- ★★★ ナビゲーションメニューを追加 ★★★ -->
+           <!-- ★★★ ナビゲーションメニュー（修正版） ★★★ -->
             <nav class="bg-gray-800/50 border border-gray-700 rounded-lg p-4 mb-16 sticky top-4 z-40 backdrop-blur-sm">
-                <ul class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-8">
+                <ul class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 md:gap-x-6">
+                    <!-- ▼▼▼ TOPページへ戻るリンクを追加 ▼▼▼ -->
+                    <li><a href="index.html" class="font-bold text-emerald-400 hover:text-emerald-300 transition-colors text-sm">← TOPページへ</a></li>
+                    <li class="text-gray-600">|</li>
+                    <!-- ▲▲▲ ここまで追加 ▲▲▲ -->
                     <li><a href="#guide" class="font-bold hover:text-cyan-400 transition-colors">参加フロー</a></li>
-                    <li><a href="#timeline" class="font-bold hover:text-cyan-400 transition-colors">説明会タイムライン</a></li>
                     <li><a href="#discord-reaction" class="font-bold hover:text-cyan-400 transition-colors">Discord参加表明</a></li>
                     <li><a href="#submission-form" class="font-bold hover:text-cyan-400 transition-colors">提出フォーム</a></li>
                 </ul>
@@ -85,47 +88,7 @@
                 </div>
             </section>
             
-               <!-- ★★★ 説明会タイムラインセクションを追加 ★★★ -->
-            <section id="timeline" class="mb-20">
-                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center text-cyan-400">TIMELINE - 7/18 説明会プログラム -</h2>
-                <div class="bg-gray-800 p-6 md:p-8 rounded-lg border border-gray-700 space-y-4">
-                    <div class="flex items-start">
-                        <div class="w-24 font-bold text-cyan-300">20:00-20:10</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold">オープニング＆ハッカソン全体像紹介</h3>
-                            <p class="text-sm text-slate-400">なぜ今「農業×AI」なのか？ハッカソンの目的と未来像を共有します。</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="w-24 font-bold text-emerald-300">20:10-20:35</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold">【セッション1】川上牧場の挑戦</h3>
-                            <p class="text-sm text-slate-400">データで需給ミスマッチという巨大な敵を倒す、壮大な挑戦状。</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="w-24 font-bold text-orange-300">20:35-21:00</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold">【セッション2】トヤマミカンの挑戦</h3>
-                            <p class="text-sm text-slate-400">AIに“私の心”を宿らせる、新しい顧客体験への挑戦状。</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="w-24 font-bold text-blue-300">21:00-21:25</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold">【セッション3】彩園なかやの挑戦</h3>
-                            <p class="text-sm text-slate-400">データサイエンスで「農業のリスク」を予測・最適化する挑戦状。</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="w-24 font-bold text-slate-300">21:25-21:30</div>
-                        <div class="flex-1">
-                            <h3 class="font-bold">メンター紹介＆クロージング</h3>
-                            <p class="text-sm text-slate-400">あなたの開発を支えるサポート体制と、今後の流れをご案内します。</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             <!-- ★★★ Discordリアクション説明セクションを追加 ★★★ -->
             <section id="discord-reaction" class="mb-20">
