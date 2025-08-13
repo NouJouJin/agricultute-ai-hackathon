@@ -6,7 +6,31 @@
     <title>ハッカソン参加者ポータル - 農業AIハッカソン2025</title>
     <meta name="robots" content="noindex">
 
-    <!-- Tailwind CSS (CDN) -->
+      <!-- OGP (Open Graph Protocol) タグ -->
+    <meta property="og:url" content="https://hackathon.metagri-labo.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="農業AIハッカソン2025｜トップランナー農家と挑む、生成AI開発プロジェクト">
+    <meta property="og:description" content="AIで農業の未来を創る、オンラインハッカソンが始動！酪農・ねぎ・みかん農家が抱えるリアルな課題に、あなたの技術でイノベーションを起こしませんか？">
+    <meta property="og:site_name" content="農業AIハッカソン2025">
+    <meta property="og:image" content="http://metagri-labo.com/wp-content/uploads/2025/07/d383cc80fdd986713a78417fd8abc08b.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitterカード -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="農業AIハッカソン2025｜トップランナー農家と挑む、生成AI開発プロジェクト">
+    <meta name="twitter:description" content="AIで農業の未来を創る、オンラインハッカソンが始動！酪農・ねぎ・みかん農家が抱えるリアルな課題に、あなたの技術でイノベーションを起こしませんか？">
+    <meta name="twitter:image" content="http://metagri-labo.com/wp-content/uploads/2025/07/d383cc80fdd986713a78417fd8abc08b.png">
+
+<!-- ファビコン設定（推奨版） -->
+    <!-- 最も基本的な .ico 形式 (32x32) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- PNG形式の指定（高解像度） -->
+    <link rel="icon" href="https://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png" type="image/png">
+    <!-- Appleデバイス用アイコン -->
+    <link rel="apple-touch-icon" href="https://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png">
+
+        <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts (Orbitron & Noto Sans JP) -->
@@ -14,13 +38,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 
-    <!-- 共通のCSSを読み込む -->
+        <!-- 共通のCSSを読み込む -->
     <link rel="stylesheet" href="style.css">
     
     <style>
         /* スムーズスクロールのためのCSS */
         html {
             scroll-behavior: smooth;
+        }
+
+        /* ★★★ BGM操作ボタンのCSSを追加 ★★★ */
+        .bgm-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: rgba(45, 55, 72, 0.8); /* 半透明のダークグレー */
+            border: 1px solid #4A5568;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            backdrop-filter: blur(5px); /* ガラスのようなエフェクト */
+        }
+        .bgm-button:hover {
+            background-color: #4A5568;
+            transform: scale(1.1);
+        }
+        .bgm-button .icon-off {
+            display: none; /* 初期状態ではミュートアイコンを非表示 */
+        }
+        .bgm-button.muted .icon-on {
+            display: none; /* mutedクラスが付いたらスピーカーアイコンを非表示 */
+        }
+        .bgm-button.muted .icon-off {
+            display: block; /* mutedクラスが付いたらミュートアイコンを表示 */
         }
     </style>
 </head>
@@ -353,5 +411,71 @@
         </div>
     </footer>
 
+        <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
+    <!-- ★★★ BGM再生のための要素とスクリプトを追加 ★★★ -->
+    <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
+
+    <!-- 1. BGMの音声ファイル -->
+    <audio id="bgm" loop>
+        <source src="audio/hikari_no_tane.mp3" type="audio/mpeg">
+        ブラウザが音声再生に対応していません。
+    </audio>
+
+    <!-- 2. BGMのON/OFFを切り替えるボタン -->
+    <button id="bgm-toggle" class="bgm-button" aria-label="BGMをミュート">
+        <span class="icon-on">🔊</span>
+        <span class="icon-off">🔇</span>
+    </button>
+
+    <!-- 3. BGMを制御するJavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bgm = document.getElementById('bgm');
+            const bgmToggleButton = document.getElementById('bgm-toggle');
+
+            if (bgm && bgmToggleButton) {
+                // 初期音量を小さく設定 (20%)
+                bgm.volume = 0.2;
+
+                // ユーザーがページを操作した時に初めて再生を開始する
+                // (最近のブラウザの自動再生ポリシーに対応するため)
+                const playBgmOnFirstInteraction = () => {
+                    // 一度だけ実行されるようにリスナーを削除
+                    document.removeEventListener('click', playBgmOnFirstInteraction, true);
+                    document.removeEventListener('keydown', playBgmOnFirstInteraction, true);
+                    
+                    bgm.play().catch(error => {
+                        console.log("BGMの自動再生がブラウザにブロックされました。ユーザー操作が必要です。");
+                    });
+                };
+
+                document.addEventListener('click', playBgmOnFirstInteraction, true);
+                document.addEventListener('keydown', playBgmOnFirstInteraction, true);
+
+                // ボタンクリックでミュートを切り替える
+                bgmToggleButton.addEventListener('click', () => {
+                    // もし再生が始まっていなければ、このクリックで再生を開始
+                    if (bgm.paused) {
+                        bgm.play();
+                    }
+
+                    bgm.muted = !bgm.muted;
+                    bgmToggleButton.classList.toggle('muted', bgm.muted);
+                    
+                    if (bgm.muted) {
+                        bgmToggleButton.setAttribute('aria-label', 'BGMのミュートを解除');
+                    } else {
+                        bgmToggleButton.setAttribute('aria-label', 'BGMをミュート');
+                    }
+                });
+            }
+        });
+    </script>
+    <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
+    <!-- ★★★ 追加部分はここまで ★★★ -->
+    <!-- ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ -->
+
+
 </body>
 </html>
+
