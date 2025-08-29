@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>審査結果発表 - 農業AIハッカソン2025</title>
+    <meta name="robots" content="noindex">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Orbitron & Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- 共通のCSSを読み込む -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* 背景にキラキラしたパーティクルを追加 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: particle-move 60s linear infinite;
+            z-index: -1;
+        }
+        @keyframes particle-move {
+            from { background-position: 0 0; }
+            to { background-position: -400px -400px; }
+        }
+    </style>
+</head>
+<body class="bg-[#1a202c] text-slate-200">
+
+    <main class="py-12 md:py-20 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- ヘッダー -->
+            <header class="text-center mb-16">
+                <a href="portal.html" class="text-cyan-400 hover:underline mb-6 inline-block">&lt; 参加者ポータルへ戻る</a>
+                <h1 class="text-4xl md:text-6xl font-bold text-amber-300 font-orbitron text-glow-yellow">RESULTS</h1>
+                <p class="text-2xl md:text-3xl font-bold text-slate-100 mt-2">審査結果発表</p>
+                <p class="text-lg text-slate-300 mt-4 max-w-2xl mx-auto">1ヶ月間の熱狂の末に生まれた、未来のタネ。全ての挑戦者に、心からの敬意と感謝を。</p>
+            </header>
+
+            <!-- 受賞作品発表セクション -->
+            <section id="awards" class="space-y-12">
+
+                <!-- === 川上牧場賞 === -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-center text-emerald-400 border-b-2 border-emerald-700 pb-3">🐄 川上牧場賞</h2>
+                    
+                    <!-- 牛乳需給管理部門 -->
+                    <div class="mt-8 bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                        <p class="text-sm font-bold text-emerald-300">【牛乳需給管理部門】</p>
+                        <h3 class="text-2xl font-bold text-white mt-1">牧場統合マネジメント</h3>
+                        <p class="text-slate-400 mt-1">by チーム「SMILE」</p>
+                        <div class="mt-4 text-center">
+                            <a href="[SMILEのデモURL]" target="_blank" class="inline-block px-5 py-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-500 transition-colors text-sm">作品を見る</a>
+                        </div>
+                    </div>
+                    
+                    <!-- ミルクモンスター部門 -->
+                    <div class="mt-6 bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                        <p class="text-sm font-bold text-emerald-300">【ミルクモンスター部門】</p>
+                        <h3 class="text-2xl font-bold text-white mt-1">Milk Monster</h3>
+                        <p class="text-slate-400 mt-1">by チーム「team_sousei」</p>
+                        <div class="mt-4 text-center">
+                           <a href="https://milk-monster.an.r.appspot.com/" target="_blank" class="inline-block px-5 py-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-500 transition-colors text-sm">作品を見る</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === トヤマミカン賞 === -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-center text-orange-400 border-b-2 border-orange-700 pb-3">🍊 トヤマミカン賞</h2>
+                    <div class="mt-8 bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                        <h3 class="text-2xl font-bold text-white mt-1">Faster-response</h3>
+                        <p class="text-slate-400 mt-1">by 有田祥岳</p>
+                        <div class="mt-4 text-center">
+                            <a href="https://drive.google.com/file/d/1gfI32h6cSI4iZ-lK6_Rd3VzcOkXlAEZ3/view" target="_blank" class="inline-block px-5 py-2 bg-orange-600 text-white font-bold rounded-lg hover:bg-orange-500 transition-colors text-sm">作品を見る</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- === 彩園なかや賞 === -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-center text-cyan-400 border-b-2 border-cyan-700 pb-3">🌱 彩園なかや賞</h2>
+                    <div class="mt-8 bg-gray-800/50 p-6 rounded-lg border border-gray-700 text-center">
+                        <p class="text-slate-300">今回は「該当なし」となりましたが、挑戦いただいた作品には大きな可能性を感じています。詳細は下記の講評をご覧ください。</p>
+                    </div>
+                </div>
+                
+                <!-- === Metagri研究所賞 & 特別講評 === -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-center text-yellow-400 border-b-2 border-yellow-700 pb-3">🏆 Metagri研究所賞 ＆ 特別講評</h2>
+                     <div class="mt-8 bg-gradient-to-br from-yellow-900/30 to-gray-800 p-6 md:p-8 rounded-lg border border-yellow-500">
+                        <p class="text-sm font-bold text-yellow-300 text-center">【Metagri研究所賞】</p>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mt-1 text-center">Field diagnosis</h3>
+                        <p class="text-slate-400 mt-1 text-center mb-6">by 吉武浩志</p>
+                        
+                        <hr class="border-yellow-700 my-6">
+
+                        <h4 class="font-bold text-lg text-yellow-200 mb-2">運営からのコメント：</h4>
+                        <div class="text-slate-300 space-y-4 leading-relaxed bg-gray-900/50 p-4 rounded-md">
+                            <p>今回のシステムは、大変意欲的で努力の跡がしっかりと感じられる提案でした。農業分野において病害虫対策は長年の課題であり、その解決にAIという最新の技術を掛け合わせた視点は非常に素晴らしく、また将来性のあるシステムとして大いに期待できるものでした。</p>
+                            <p>一方で、プレゼンテーションにおいては「まだできていないこと」を強調するよりも、現時点で実現可能な部分や、このアイディアならではのイノベーションのポイントをより前面に出していただきたかったと思います。また、今後どのように発展させていきたいかという具体的な方向性を示すことで、提案の魅力が一層伝わったのではないかと感じました。</p>
+                            <p class="font-bold text-yellow-200">総じて、挑戦する姿勢と未来志向の視点が高く評価できる提案でした。今後のブラッシュアップにより、実用化へ向けてますます価値のあるシステムへ成長していくことを期待しています。</p>
+                        </div>
+
+                        <div class="mt-6 text-center">
+                            <a href="https://www.youtube.com/watch?v=mEZGNNr4c7A" target="_blank" class="inline-block px-5 py-2 bg-yellow-600 text-white font-bold rounded-lg hover:bg-yellow-500 transition-colors text-sm">作品を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 今後の展望セクション -->
+            <section id="next-steps" class="mt-20 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-cyan-400">NEXT STEP - そして、物語は続く -</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto">
+                    このハッカソンは、ゴールではありません。受賞された皆様とは、これから「共同事業開発パートナー」として、プロトタイプを現実のプロダクトへと昇華させる、新たな冒険が始まります。
+                    今回生まれた全てのアイデアと情熱を糧に、Metagri研究所はこれからも「農業維新」への挑戦を続けます。
+                </p>
+                 <div class="mt-8">
+                     <a href="gallery.html" class="inline-block px-8 py-3 bg-cyan-600 text-white font-bold rounded-lg hover:bg-cyan-500 transition-colors">全応募作品の一覧を見る</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="py-12 text-center text-slate-400 bg-[#121822] mt-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-sm">© 2025 Metagri研究所. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .text-glow-yellow {
+            text-shadow: 0 0 8px rgba(252, 211, 77, 0.7), 0 0 16px rgba(252, 211, 77, 0.5);
+        }
+    </style>
+    
+</body>
+</html>
