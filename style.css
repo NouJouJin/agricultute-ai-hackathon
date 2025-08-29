@@ -73,3 +73,13 @@ details[open] .faq-icon {
         background-image: url('http://metagri-labo.com/wp-content/uploads/2025/06/90c7a7556bd7170b22826773f46893df.png');
     }
 }
+
+
+
+.text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.text-shadow-lg {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
