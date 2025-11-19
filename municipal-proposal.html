@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- サイトの基本情報 -->
+    <title>自治体向け 鳥獣被害対策AIハッカソン企画提案｜Metagri研究所</title>
+    <meta name="description" content="地域の困りごとを、AIの力で解決する。鳥獣被害対策の現場課題を、AI×IoT技術と地域の若者の力で解決する共創型ハッカソン企画。低コスト・実用的・若者定着を実現します。">
+    <link rel="canonical" href="https://hackathon.metagri-labo.com/municipal-proposal.html" />
+
+    <!-- OGP (Open Graph Protocol) タグ -->
+    <meta property="og:url" content="https://hackathon.metagri-labo.com/municipal-proposal.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="自治体向け 鳥獣被害対策AIハッカソン企画提案｜Metagri研究所">
+    <meta property="og:description" content="地域の困りごとを、AIの力で解決する。鳥獣被害対策の現場課題を、AI×IoT技術と地域の若者の力で解決する共創型ハッカソン。">
+    <meta property="og:site_name" content="鳥獣被害対策AIハッカソン企画提案">
+    <meta property="og:image" content="http://metagri-labo.com/wp-content/uploads/2025/06/728f69a01bec5a6b71544720fa0061cb-1.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitterカード -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="自治体向け 鳥獣被害対策AIハッカソン企画提案｜Metagri研究所">
+    <meta name="twitter:description" content="地域の困りごとを、AIの力で解決する。鳥獣被害対策の現場課題を、AI×IoT技術と地域の若者の力で解決する共創型ハッカソン。">
+    <meta name="twitter:image" content="http://metagri-labo.com/wp-content/uploads/2025/06/728f69a01bec5a6b71544720fa0061cb-1.png">
+
+    <!-- ファビコン設定 -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Orbitron & Noto Sans JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Section 1: ヒーローセクション -->
+    <section id="hero" class="h-screen w-full flex flex-col justify-center items-center text-center relative overflow-hidden bg-gray-900">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#1a202c] via-[#1a202c]/80 to-[#0f4c3a]/50 z-10"></div>
+        <div class="z-20 p-4">
+            <p class="text-lg md:text-xl text-cyan-300 font-bold tracking-widest fade-in-down mb-2">企画提案：株式会社農情人（Metagri研究所）</p>
+            <h1 class="text-4xl md:text-7xl lg:text-8xl font-orbitron font-black my-4 text-glow bg-clip-text text-transparent bg-gradient-to-r from-[#2d9f7b] to-[#00ffff] fade-in">
+                地域の困りごとを、<br>AIの力で解決する
+            </h1>
+            <p class="text-xl md:text-2xl max-w-4xl mx-auto text-slate-200 font-bold fade-in-up mb-6">
+                鳥獣被害対策 × AI × 若者の力<br class="md:hidden"> = 地域課題解決ハッカソン
+            </p>
+            <div class="bg-gray-800/90 border border-cyan-400/50 rounded-lg p-6 max-w-2xl mx-auto text-left fade-in-up">
+                <p class="text-sm text-cyan-300 font-bold mb-2">📋 対象自治体</p>
+                <p class="text-slate-200 mb-4">鳥獣被害対策に課題を抱える自治体</p>
+                <p class="text-sm text-cyan-300 font-bold mb-2">⏱️ 実施期間</p>
+                <p class="text-slate-200">約3ヶ月（企画〜成果発表まで）</p>
+            </div>
+            <a href="#overview" class="btn-cta inline-block mt-10 px-10 py-4 font-bold text-white rounded-lg bg-gradient-to-r from-emerald-500 to-cyan-500 fade-in-up">
+                企画詳細を見る
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 2: 企画概要 -->
+    <section id="overview" class="py-20 px-6 lg:px-12 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 slide-up">🎯 企画概要</h2>
+            <p class="text-lg md:text-xl text-slate-300 text-center mb-16 max-w-4xl mx-auto slide-up">
+                本企画は、<strong class="text-cyan-400">鳥獣被害対策の現場課題</strong>を、<strong class="text-emerald-400">AI×IoT技術</strong>と<strong class="text-orange-400">地域の若者の力</strong>で解決する共創型ハッカソンです。<br><br>
+                Metagri研究所が2025年に実施した「農業AIハッカソン2025」の成功モデルを活用し、自治体の鳥獣被害対策部門が抱える課題を、技術的に解決可能なプロトタイプに変換。さらに社会実装まで伴走支援します。
+            </p>
+
+            <h3 class="text-2xl md:text-4xl font-bold text-center mb-12 slide-up">3つの特徴</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 特徴1 -->
+                <div class="bg-gray-800 p-8 rounded-xl border border-cyan-500/30 slide-up">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h4 class="text-xl font-bold text-cyan-400 mb-4">① 非エンジニアでも参加可能<br>「Vibe Coding」推奨</h4>
+                    <p class="text-slate-300">
+                        生成AIとの対話でコードを生成する手法により、プログラミング経験のない方でも参加可能。地域の多様な人材が活躍できます。
+                    </p>
+                </div>
+
+                <!-- 特徴2 -->
+                <div class="bg-gray-800 p-8 rounded-xl border border-emerald-500/30 slide-up">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h4 class="text-xl font-bold text-emerald-400 mb-4">② 2週間で実務活用できる成果物</h4>
+                    <p class="text-slate-300">
+                        過去ハッカソンでは、受賞作品が<strong>2週間で農家の業務で活用開始</strong>。プロトタイプで終わらせず、実際に使える解決策を生み出します。
+                    </p>
+                </div>
+
+                <!-- 特徴3 -->
+                <div class="bg-gray-800 p-8 rounded-xl border border-orange-500/30 slide-up">
+                    <div class="text-5xl mb-4">💰</div>
+                    <h4 class="text-xl font-bold text-orange-400 mb-4">③ 初期費用負担なしで実施可能</h4>
+                    <p class="text-slate-300">
+                        自治体の金銭的負担を最小化。実証フィールドと課題提供のみで、技術支援・メンター派遣・運営はMetagri研究所が担当します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: 背景・課題認識 -->
+    <section id="challenges" class="py-20 px-6 lg:px-12 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 slide-up">📊 背景・課題認識</h2>
+            <p class="text-xl text-slate-300 text-center mb-12 slide-up">自治体が抱える鳥獣被害対策の3大課題</p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- 課題1 -->
+                <div class="bg-red-900/20 border border-red-500/30 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-red-400 mb-4">1. 人手不足と高齢化</h3>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• 猟師・捕獲従事者の高齢化が進行</li>
+                        <li>• わなの見回りに膨大な時間がかかる（1日に何度も山林を巡回）</li>
+                        <li>• 若手の担い手が不足</li>
+                    </ul>
+                </div>
+
+                <!-- 課題2 -->
+                <div class="bg-orange-900/20 border border-orange-500/30 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">2. 効果的な対策の不足</h3>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• 鳥獣の出没パターンが把握できない</li>
+                        <li>• 捕獲情報が紙ベース・属人化しており、データ活用できない</li>
+                        <li>• 被害状況と捕獲活動の連携が取れていない</li>
+                    </ul>
+                </div>
+
+                <!-- 課題3 -->
+                <div class="bg-yellow-900/20 border border-yellow-500/30 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-4">3. 予算制約</h3>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• 高額なIoT・AIシステムの導入は難しい</li>
+                        <li>• 専門業者への外注費用が高額</li>
+                        <li>• 費用対効果が見えにくい</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- なぜハッカソンなのか？ -->
+            <div class="bg-gradient-to-r from-cyan-900/30 to-emerald-900/30 border border-cyan-500/50 p-10 rounded-xl slide-up">
+                <h3 class="text-3xl font-bold text-cyan-400 mb-6 text-center">なぜハッカソンなのか？</h3>
+                <p class="text-lg text-slate-200 mb-6 text-center max-w-3xl mx-auto">
+                    従来の「業者への発注」ではなく、<strong class="text-cyan-400">地域の若者が主体的に課題解決</strong>に取り組むことで：
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3">✓</span>
+                        <p class="text-slate-200">低コストで実用的なプロトタイプが生まれる</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3">✓</span>
+                        <p class="text-slate-200">若者やAIを使える未来のクリエイターの地域定着・UIターン促進につながる</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3">✓</span>
+                        <p class="text-slate-200">自治体職員・猟師・クリエイターの協働が生まれる</p>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-2xl mr-3">✓</span>
+                        <p class="text-slate-200">継続的な改善・運用体制ができる</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: 想定される開発テーマ例 -->
+    <section id="themes" class="py-20 px-6 lg:px-12 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 slide-up">💡 想定される開発テーマ例</h2>
+            <p class="text-lg text-slate-300 text-center mb-12 slide-up max-w-3xl mx-auto">
+                以下のような、<strong class="text-cyan-400">現場で本当に困っている課題</strong>を題材にします。
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- テーマ1 -->
+                <div class="card-container bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 slide-up" style="transform-style: preserve-3d;">
+                    <div class="card-hover p-8">
+                        <div class="text-5xl mb-4 text-center">📷</div>
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4 text-center">テーマ1</h3>
+                        <h4 class="text-xl font-bold mb-3">わな見回り効率化システム</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• AIカメラでわな内の鳥獣を自動検知</li>
+                            <li>• 捕獲時に猟師のスマホへ自動通知</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- テーマ2 -->
+                <div class="card-container bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 slide-up" style="transform-style: preserve-3d;">
+                    <div class="card-hover p-8">
+                        <div class="text-5xl mb-4 text-center">🗺️</div>
+                        <h3 class="text-2xl font-bold text-emerald-400 mb-4 text-center">テーマ2</h3>
+                        <h4 class="text-xl font-bold mb-3">鳥獣出没予測マップ</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• 過去の出没データ・被害データをAI分析</li>
+                            <li>• 「明日この地域に出没しやすい」を予測</li>
+                            <li>• 農家への事前警戒情報配信</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- テーマ3 -->
+                <div class="card-container bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 slide-up" style="transform-style: preserve-3d;">
+                    <div class="card-hover p-8">
+                        <div class="text-5xl mb-4 text-center">📱</div>
+                        <h3 class="text-2xl font-bold text-orange-400 mb-4 text-center">テーマ3</h3>
+                        <h4 class="text-xl font-bold mb-3">被害報告DXアプリ</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• 農家がスマホで被害写真を撮影→即報告</li>
+                            <li>• AIが被害状況（鳥獣種別・被害レベル）を自動判定</li>
+                            <li>• 自治体の集計作業を自動化</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-cyan-900/20 border border-cyan-500/30 p-8 rounded-xl slide-up">
+                <p class="text-lg text-slate-200">
+                    <span class="text-cyan-400 font-bold text-xl">💬 課題は自治体と協議して決定</span><br><br>
+                    実際の課題提供者（自治体職員・猟師・農家）の「困りごと」をヒアリングし、技術的に解決可能なテーマに落とし込みます。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: 実施スケジュール -->
+    <section id="schedule" class="py-20 px-6 lg:px-12 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 slide-up">📅 実施スケジュール（想定）</h2>
+
+            <div class="space-y-8">
+                <!-- Phase 1 -->
+                <div class="bg-gray-800 border border-cyan-500/30 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-cyan-400 mb-4">Phase 1: 企画準備期間（1ヶ月）</h3>
+                    <div class="space-y-4 ml-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-200 mb-2">Week 1-2: 課題ヒアリング</h4>
+                            <ul class="text-slate-300 space-y-1 ml-4">
+                                <li>• 自治体担当者・猟師・農家へのヒアリング</li>
+                                <li>• 現場視察・データ確認</li>
+                                <li>• 解決すべき優先課題の特定</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-200 mb-2">Week 3-4: ハッカソン設計</h4>
+                            <ul class="text-slate-300 space-y-1 ml-4">
+                                <li>• 開発テーマの確定</li>
+                                <li>• 参加者募集開始（地域の高校・大学・企業へ告知）</li>
+                                <li>• メンター・審査員の確保</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="bg-gray-800 border border-emerald-500/30 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">Phase 2: ハッカソン実施（1〜2ヶ月）</h3>
+                    <div class="space-y-4 ml-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-200 mb-2">Day 1: キックオフ（オンライン or 現地）</h4>
+                            <ul class="text-slate-300 space-y-1 ml-4">
+                                <li>• 課題提供者からの説明</li>
+                                <li>• チームビルディング</li>
+                                <li>• 技術レクチャー（生成AI活用法・Vibe Coding）</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-200 mb-2">Week 1-3: 開発期間</h4>
+                            <ul class="text-slate-300 space-y-1 ml-4">
+                                <li>• チームごとにプロトタイプ開発</li>
+                                <li>• Discord上でメンター常時サポート</li>
+                                <li>• 週1回のオンライン進捗共有会</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-200 mb-2">Week 4: 最終発表会</h4>
+                            <ul class="text-slate-300 space-y-1 ml-4">
+                                <li>• 各チームが成果をプレゼン</li>
+                                <li>• 課題提供者・審査員による評価</li>
+                                <li>• 最優秀賞・優秀賞の選出</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="bg-gray-800 border border-orange-500/30 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">Phase 3: 社会実装支援（1ヶ月〜）</h3>
+                    <div class="space-y-4 ml-4">
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-200 mb-2">受賞作品の実証実験</h4>
+                            <ul class="text-slate-300 space-y-1 ml-4">
+                                <li>• 課題提供者が実際の現場で使用</li>
+                                <li>• フィードバック収集・改善</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-200 mb-2">継続開発支援</h4>
+                            <ul class="text-slate-300 space-y-1 ml-4">
+                                <li>• 必要に応じてメンター派遣継続</li>
+                                <li>• 実装に向けた技術支援</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-slate-200 mb-2">事業化・予算化支援</h4>
+                            <ul class="text-slate-300 space-y-1 ml-4">
+                                <li>• 自治体の次年度予算への組み込み支援</li>
+                                <li>• 他地域への横展開サポート</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: 期待される効果 -->
+    <section id="benefits" class="py-20 px-6 lg:px-12 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 slide-up">🎁 期待される効果</h2>
+
+            <!-- 自治体にとってのメリット -->
+            <div class="mb-12 slide-up">
+                <h3 class="text-2xl md:text-3xl font-bold text-cyan-400 mb-6">自治体にとってのメリット</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <h4 class="text-xl font-bold text-slate-200 mb-3">1. 低コストで実用的なシステムが手に入る</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• コストを抑えて試作可能</li>
+                            <li>• 実際に使えるプロトタイプが複数生まれる</li>
+                            <li>• 予算化前に「使えるかどうか」を検証できる</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <h4 class="text-xl font-bold text-slate-200 mb-3">2. 若者の地域定着・関係人口創出</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• 地域課題に取り組む若者やクリエイターのコミュニティ形成</li>
+                            <li>• UIターンのきっかけづくり</li>
+                            <li>• 継続的な関わりを持つ人材の育成</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <h4 class="text-xl font-bold text-slate-200 mb-3">3. 職員・猟師のDXスキル向上</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• AI・IoT技術への理解が深まる</li>
+                            <li>• デジタル化の必要性を実感</li>
+                            <li>• 今後の政策立案に活かせる</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <h4 class="text-xl font-bold text-slate-200 mb-3">4. 広報・ブランディング効果</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• 「先進的な取り組みをする自治体」としてPR</li>
+                            <li>• メディア露出の機会</li>
+                            <li>• 他自治体への横展開モデルとなる</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 参加者にとってのメリット -->
+            <div class="mb-12 slide-up">
+                <h3 class="text-2xl md:text-3xl font-bold text-emerald-400 mb-6">参加者にとってのメリット</h3>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">✓</span>
+                            <p class="text-slate-200">地域課題解決の実践経験</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">✓</span>
+                            <p class="text-slate-200">AI・プログラミングスキルの習得</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">✓</span>
+                            <p class="text-slate-200">チーム開発の経験</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">✓</span>
+                            <p class="text-slate-200">ポートフォリオ・実績づくり</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-2xl mr-3">✓</span>
+                            <p class="text-slate-200">自治体・企業とのネットワーク形成</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 地域全体へのインパクト -->
+            <div class="slide-up">
+                <h3 class="text-2xl md:text-3xl font-bold text-orange-400 mb-6">地域全体へのインパクト</h3>
+                <div class="bg-gradient-to-r from-orange-900/30 to-red-900/30 border border-orange-500/50 p-8 rounded-xl">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-3">🎯</span>
+                            <p class="text-slate-200 text-lg">鳥獣被害の実質的な削減</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-3">🌾</span>
+                            <p class="text-slate-200 text-lg">農家の負担軽減・収入向上</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-3">🏹</span>
+                            <p class="text-slate-200 text-lg">猟師の作業効率化・安全性向上</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-3">💻</span>
+                            <p class="text-slate-200 text-lg">デジタル人材の地域定着</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: 過去実績 -->
+    <section id="past-results" class="py-20 px-6 lg:px-12 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 slide-up">📈 過去実績：Metagri研究所のハッカソン</h2>
+            <p class="text-lg text-slate-300 text-center mb-12 slide-up max-w-3xl mx-auto">
+                私たちは、2025年に農業分野で同様のハッカソンを成功させました。<br>
+                そのノウハウを活かし、鳥獣被害対策でも成果を生み出します。
+            </p>
+
+            <div class="bg-gradient-to-r from-cyan-900/30 to-emerald-900/30 border-2 border-cyan-500/50 p-10 rounded-2xl mb-12 slide-up">
+                <h3 class="text-3xl font-bold text-cyan-400 mb-6 text-center">農業AIハッカソン2025（2025年10月〜11月実施）</h3>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="text-center">
+                        <p class="text-sm text-slate-400 mb-2">参加者</p>
+                        <p class="text-2xl font-bold text-white">プログラミング未経験者を含む<br>多様な参加者</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm text-slate-400 mb-2">課題提供</p>
+                        <p class="text-2xl font-bold text-white">酪農・みかん・ねぎ<br>農家のトップランナー</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-sm text-slate-400 mb-2">メンター</p>
+                        <p class="text-2xl font-bold text-white">JDLA広島チャプター<br>3名×1ヶ月間</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 p-6 rounded-xl mb-6">
+                    <h4 class="text-xl font-bold text-emerald-400 mb-4">主な成果</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="text-emerald-400 font-bold mr-3">•</span>
+                            <p class="text-slate-200"><strong class="text-white">『Milk Monster』</strong>：消費者の購買行動をゲーム化</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-emerald-400 font-bold mr-3">•</span>
+                            <p class="text-slate-200"><strong class="text-white">『Faster-response』</strong>：農家の人柄をAIで再現 → <strong class="text-cyan-400">2週間で農家の業務で活用開始</strong></p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-emerald-400 font-bold mr-3">•</span>
+                            <p class="text-slate-200"><strong class="text-white">『Field diagnosis』</strong>：病害虫リスクをデータで予測</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 p-6 rounded-xl">
+                    <h4 class="text-xl font-bold text-orange-400 mb-4">特徴</h4>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-start">
+                            <span class="text-orange-400 mr-3">✓</span>
+                            <p class="text-slate-200">非エンジニアが受賞</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-orange-400 mr-3">✓</span>
+                            <p class="text-slate-200">JDLA広島チャプターがメンター支援</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-orange-400 mr-3">✓</span>
+                            <p class="text-slate-200">プロトタイプ→実証→改善→事業化まで伴走</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-orange-400 mr-3">✓</span>
+                            <p class="text-slate-200">2週間で実務活用開始の実績</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="index.html" class="inline-block px-8 py-4 bg-gradient-to-r from-cyan-500 to-emerald-500 text-white font-bold rounded-lg hover:scale-105 transition-transform">
+                        🌾 農業AIハッカソン2025の詳細を見る
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="results.html" class="bg-gray-800 border border-gray-700 p-6 rounded-xl hover:border-cyan-500/50 transition-colors slide-up">
+                    <div class="text-4xl mb-3 text-center">🏆</div>
+                    <h4 class="text-lg font-bold text-center mb-2">最終結果</h4>
+                    <p class="text-slate-400 text-center text-sm">受賞作品と審査結果</p>
+                </a>
+                <a href="gallery.html" class="bg-gray-800 border border-gray-700 p-6 rounded-xl hover:border-emerald-500/50 transition-colors slide-up">
+                    <div class="text-4xl mb-3 text-center">🎨</div>
+                    <h4 class="text-lg font-bold text-center mb-2">全提出作品</h4>
+                    <p class="text-slate-400 text-center text-sm">参加者の成果物ギャラリー</p>
+                </a>
+                <a href="portal.html" class="bg-gray-800 border border-gray-700 p-6 rounded-xl hover:border-orange-500/50 transition-colors slide-up">
+                    <div class="text-4xl mb-3 text-center">📂</div>
+                    <h4 class="text-lg font-bold text-center mb-2">参加者ポータル</h4>
+                    <p class="text-slate-400 text-center text-sm">説明会動画・資料</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: 実施体制 -->
+    <section id="organization" class="py-20 px-6 lg:px-12 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 slide-up">🤝 実施体制</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 運営主体 -->
+                <div class="bg-cyan-900/20 border border-cyan-500/50 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-cyan-400 mb-4">運営主体</h3>
+                    <p class="text-xl font-bold text-white mb-4">株式会社農情人<br>（Metagri研究所）</p>
+                    <h4 class="text-lg font-bold text-slate-200 mb-2">役割：</h4>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• ハッカソン全体の企画・運営</li>
+                        <li>• 参加者募集・広報</li>
+                        <li>• 技術メンター派遣</li>
+                        <li>• オンラインコミュニティ運営（Discord）</li>
+                        <li>• 成果物の社会実装支援</li>
+                    </ul>
+                </div>
+
+                <!-- 自治体の役割 -->
+                <div class="bg-emerald-900/20 border border-emerald-500/50 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">自治体の役割</h3>
+                    <h4 class="text-lg font-bold text-slate-200 mb-2 mt-6">課題提供：</h4>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• 現場の困りごとのヒアリング協力</li>
+                        <li>• 鳥獣被害データの提供（可能な範囲で）</li>
+                        <li>• 猟師・農家との橋渡し</li>
+                    </ul>
+                    <h4 class="text-lg font-bold text-slate-200 mb-2 mt-4">実証フィールド提供：</h4>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• プロトタイプのテスト環境</li>
+                        <li>• 受賞作品の実証実験への協力</li>
+                    </ul>
+                    <h4 class="text-lg font-bold text-slate-200 mb-2 mt-4">広報協力：</h4>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• 自治体広報誌・HPでの告知</li>
+                        <li>• 地域の学校・企業への周知協力</li>
+                    </ul>
+                </div>
+
+                <!-- 外部協力体制 -->
+                <div class="bg-orange-900/20 border border-orange-500/50 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">外部協力体制</h3>
+                    <h4 class="text-lg font-bold text-slate-200 mb-2 mt-6">技術メンター：</h4>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• JDLA（日本ディープラーニング協会）地方支部</li>
+                        <li>• 農業ICT・IoT専門家</li>
+                        <li>• AIエンジニア・データサイエンティスト</li>
+                    </ul>
+                    <h4 class="text-lg font-bold text-slate-200 mb-2 mt-4">協賛企業（想定）：</h4>
+                    <ul class="text-slate-300 space-y-2">
+                        <li>• 通信キャリア（KDDI、NTT等）</li>
+                        <li>• AIカメラメーカー</li>
+                        <li>• IoTセンサー企業</li>
+                        <li>• 地元IT企業</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: 費用・条件 -->
+    <section id="cost" class="py-20 px-6 lg:px-12 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-12 slide-up">💰 費用・条件</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Metagri研究所が負担 -->
+                <div class="bg-gradient-to-br from-cyan-900/30 to-emerald-900/30 border border-cyan-500/50 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-cyan-400 mb-6">Metagri研究所が以下を負担します</h3>
+                    <ul class="text-slate-200 space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-3 text-xl">✓</span>
+                            <span>企画・運営費用</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-3 text-xl">✓</span>
+                            <span>メンター派遣費用</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-cyan-400 mr-3 text-xl">✓</span>
+                            <span>オンラインツール利用料</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 自治体の負担内容 -->
+                <div class="bg-gradient-to-br from-orange-900/30 to-yellow-900/30 border border-orange-500/50 p-8 rounded-xl slide-up">
+                    <h3 class="text-2xl font-bold text-orange-400 mb-6">自治体の負担内容（応相談）</h3>
+                    <ul class="text-slate-200 space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-orange-400 mr-3">•</span>
+                            <span>公募や広報にかかわる費用</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-400 mr-3">•</span>
+                            <span>賞金について最優秀賞10万円、優秀賞5万円など（別途協議）</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-400 mr-3">•</span>
+                            <span>キックオフ・最終発表会を現地開催する場合の会場費・交通費</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-400 mr-3">•</span>
+                            <span>受賞作品を本格システム化する場合の開発費（別途見積）</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 自治体にお願いすること -->
+            <div class="bg-gray-800 border border-gray-700 p-8 rounded-xl slide-up">
+                <h3 class="text-2xl font-bold text-slate-200 mb-6">自治体にお願いすること</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="text-lg font-bold text-emerald-400 mb-3">1. 現場へのアクセス協力</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• 課題ヒアリング対象者の紹介</li>
+                            <li>• 実証実験フィールドの提供</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-cyan-400 mb-3">2. 広報協力</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• 自治体広報での参加者募集告知</li>
+                            <li>• 地域学校・企業への周知協力</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-orange-400 mb-3">3. 実装検討への前向きな姿勢</h4>
+                        <ul class="text-slate-300 space-y-2">
+                            <li>• 受賞作品を実際に試す意欲</li>
+                            <li>• 効果があれば次年度予算化の検討</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: 最終CTA -->
+    <section id="contact-cta" class="py-24 text-center bg-gray-900">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-black font-orbitron mb-6 slide-up text-glow bg-clip-text text-transparent bg-gradient-to-r from-[#2d9f7b] to-[#00ffff]">
+                地域の未来を、共に創りませんか？
+            </h2>
+            <p class="text-xl text-slate-300 mb-10 slide-up">
+                鳥獣被害対策の課題を、AIと若者の力で解決する。<br>
+                まずはお気軽にご相談ください。
+            </p>
+            <div class="space-y-4 slide-up">
+                <a href="mailto:info@metagri-labo.com?subject=鳥獣被害対策AIハッカソンについて" class="btn-cta inline-block px-12 py-5 font-bold text-white text-lg rounded-lg bg-gradient-to-r from-emerald-500 to-cyan-500 mb-4">
+                    📧 お問い合わせ・ご相談はこちら
+                </a>
+                <p class="text-sm text-slate-400">
+                    株式会社農情人（Metagri研究所）<br>
+                    Email: info@metagri-labo.com
+                </p>
+            </div>
+
+            <!-- 農業AIハッカソンへのリンク -->
+            <div class="mt-16 pt-12 border-t border-gray-700">
+                <p class="text-slate-400 mb-6">参考：過去に実施したハッカソン</p>
+                <a href="index.html" class="inline-block px-8 py-3 bg-gray-800 border border-cyan-500/50 text-white font-bold rounded-lg hover:bg-gray-700 transition-colors">
+                    🌾 農業AIハッカソン2025のLPを見る
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center text-slate-400 bg-[#121822]">
+        <div class="max-w-4xl mx-auto px-6">
+
+            <!-- Metagri研究所ロゴ -->
+            <div class="mb-6">
+                <a href="https://metagri-labo.com/" target="_blank" class="inline-block hover:opacity-80 transition-opacity" aria-label="Metagri研究所公式サイトへ">
+                    <img src="http://metagri-labo.com/wp-content/uploads/2025/06/7b4279d2e6a9adb876529df2fcc013c1.png" alt="Metagri研究所" class="h-10 mx-auto">
+                </a>
+            </div>
+
+            <!-- SNS Links -->
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://x.com/Metagrilabo/" target="_blank" aria-label="Metagri研究所のXアカウント" class="hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="https://discord.gg/hyw3AkKa8e" target="_blank" aria-label="Metagri研究所のDiscordコミュニティ" class="hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.62c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.092zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.4.384 3.108 1.524 3.108 1.524-2.016-.864-4.044-.864-4.044-.864-1.764.048-3.096.864-4.128 2.136-1.056 1.284-1.224 2.58-1.224 2.58s.492-.54 1.32-.936c-.84.48-1.62.984-1.62 1.608 0 .612.48.984 1.152 1.416.96.624 2.064 1.056 3.264 1.128l.024-.012-1.02-.72s.564.384 1.392.864c-1.152.684-2.136 1.056-3.336 1.236l.024.012c.12.024 2.16.864 5.16 1.056l.024.012c.048.012.084.012.132.024.12.012.24.024.36.024.168.012.336.012.504.012l.012-.012z"/></svg>
+                </a>
+            </div>
+
+            <!-- ナビゲーションリンク -->
+            <div class="flex justify-center space-x-6 mb-8 text-sm">
+                <a href="index.html" class="hover:text-white hover:underline transition-colors">農業AIハッカソン2025</a>
+                <a href="https://metagri-labo.com/" target="_blank" class="hover:text-white hover:underline transition-colors">Metagri研究所</a>
+            </div>
+
+            <!-- コピーライト -->
+            <p class="text-sm">© 2025 Metagri研究所. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <!-- GSAP (Animation Library) & ScrollTrigger Plugin (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
